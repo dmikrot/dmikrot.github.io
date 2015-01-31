@@ -1,5 +1,8 @@
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap"; // Boostrap 3
+// 01.Bower Components
+// @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
-body {
-  padding-top: 70px;
-}
+// 02.Common Styles
+@import 'defs';
+@import 'header';
+
+// 03.Page Specific Styles
