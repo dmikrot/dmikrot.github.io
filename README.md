@@ -1,6 +1,6 @@
-# Brunch app
+# Personal site for Donovan Mikrot
 
-This is HTML5 application, built with [Brunch](http://brunch.io).
+This is an HTML5 application, built with [Brunch](http://brunch.io).
 
 ## Getting started
 * Install (if you don't have them):
