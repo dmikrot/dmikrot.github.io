@@ -1,5 +1,5 @@
 bower_components
 node_modules
+public
 
-public/README.md
-public/javascripts/bootstrap.js
+javascripts/bootstrap.js
