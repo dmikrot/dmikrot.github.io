@@ -19,16 +19,11 @@
       </div>
     </div>
   </header>
-  
+
   this.pages = [
     {name: 'About', url: 'about'}
   ];
-  
-  this.active = function(name) {
-    var same = false;
-    riot.route.exec(function(page) {
-      same = page === name;
-    });
-    return same;
-  };
+
+  this.active = riot.route.isCurrent;
+
 </navbar>
