@@ -1,5 +1,5 @@
 <app>
-  <navbar></navbar>
+  <navbar pages={ opts.pages }></navbar>
   <div id="content" class="container">
     <div if={ currentPage('home') }>
       <home></home>

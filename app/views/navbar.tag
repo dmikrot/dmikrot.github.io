@@ -12,17 +12,13 @@
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li each={ pages } class={ active: parent.active(url) }>
+          <li each={ opts.pages } class={ active: parent.active(url) }>
             <a href="#{url}">{name}</a>
           </li>
         </ul>
       </div>
     </div>
   </header>
-
-  this.pages = [
-    {name: 'About', url: 'about'}
-  ];
 
   this.active = riot.route.isCurrent;
 

@@ -2,7 +2,13 @@
 require('views/app');
 require('views/navbar');
 require('views/pages/home');
-require('views/pages/about');
+
+var pages = [
+  {name: 'About', url: 'about'}
+];
+for(var i = 0; i < pages.length; ++i) {
+  require('views/pages/' + pages[i].url);
+};
 
 function setPage(page) {
   if (!page) {
@@ -36,5 +42,5 @@ function isCurrent() {
 riot.route.isCurrent = isCurrent;
 
 /* Start the app */
-riot.mount('app');
+riot.mount('app', {pages: pages});
 $.material.init();
