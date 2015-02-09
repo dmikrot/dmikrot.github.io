@@ -23,6 +23,14 @@
             <a href="#{url}">{name}</a>
           </li>
         </ul>
+        <p class="navbar-text navbar-right github-btn-frame">
+          <iframe frameborder="0" scrolling="0" width="155px" height="20px"
+              src="https://ghbtns.com/github-btn.html?user=dmikrot&type=follow&count=true">
+          </iframe>
+          <iframe frameborder="0" scrolling="0" width="100px" height="20px"
+              src="https://ghbtns.com/github-btn.html?user=dmikrot&repo=dmikrot.github.io&type=watch&count=true&v=2">
+          </iframe>
+        </p>
       </div>
     </div>
   </header>
