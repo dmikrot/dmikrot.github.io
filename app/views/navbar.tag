@@ -70,6 +70,8 @@
           <a href="https://plus.google.com/u/0/+DonovanMikrot42/posts">Google+</a>
         </li>
         <li><a href="https://twitter.com/donovan_mn">Twitter</a></li>
+        <li><a href="https://www.fitbit.com/user/2F43YB">Fitbit</a></li>
+        <li><a href="http://donovanmikrot.brandyourself.com/">BrandYourself</a></li>
         <li role="presentation" class="dropdown-header">Certifications</li>
         <li>
           <a href="http://www.scrumalliance.org/community/profile/dlind22">
