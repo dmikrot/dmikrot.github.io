@@ -6,7 +6,8 @@
     "jquery": "~2.1.3",
     "bootstrap-sass": "~3.3.3",
     "bootstrap-material-design": "~0.2.2",
-    "riot": "~2.0.7"
+    "riot": "~2.0.7",
+    "timesheet.js": "*"
   },
   "overrides": {
     "bootstrap-material-design": {

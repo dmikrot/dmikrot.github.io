@@ -1,7 +1,8 @@
 // 01.Bower Components
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../../bower_components/bootstrap-material-design/sass/material";
-@import "../../bower_components/bootstrap-material-design/sass/ripples";
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../../bower_components/bootstrap-material-design/sass/material';
+@import '../../bower_components/bootstrap-material-design/sass/ripples';
+@import 'timesheet';
 
 // 02.Common Styles
 @import 'defs';
