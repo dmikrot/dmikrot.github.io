@@ -1,0 +1,28 @@
+.timesheet {
+  width: auto;
+  height: 24 * 15 + 28px;
+
+  .scale section {
+    width: 50px;
+  }
+
+  .bubble-student {
+    background-color: green;
+  }
+  
+  .bubble-intern {
+    background-color: blue;
+  }
+  
+  .bubble-employee {
+    background-color: red;
+  }
+  
+  .bubble-hobby {
+    background-color: orange;
+  }
+
+  .bubble-travel {
+    background-color: yellow;
+  }
+}

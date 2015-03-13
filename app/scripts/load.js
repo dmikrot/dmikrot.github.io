@@ -2,6 +2,7 @@
 require('views/app');
 require('views/navbar');
 require('views/pages/home');
+require('views/timesheet');
 
 var pages = [
   {name: 'About', url: 'about'}

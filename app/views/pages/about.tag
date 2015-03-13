@@ -3,6 +3,7 @@
     <h1><span class="glyphicon glyphicon-info-sign"></span>About Donovan</h1>
   </div>
   <intro></intro>
+  <timesheet></timesheet>
   <opinions></opinions>
   <contact></contact>
 </about>
