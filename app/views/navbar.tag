@@ -57,7 +57,7 @@
       <ul class="dropdown-menu" role="menu">
         <li><a href="/static/Donovan_Mikrot_Resume.pdf">Résumé</a></li>
         <li><a href="/static/Donovan_Mikrot_Transcript.pdf">Transcript</a></li>
-        <li><a href="https://hipcv.com/donovanmikrot/r/20140321">HipCV</a></li>
+        <li><a href="https://hipcv.com/donovanmikrot/r/20150315">HipCV</a></li>
       </ul>
     </li>
     <li class="dropdown">
