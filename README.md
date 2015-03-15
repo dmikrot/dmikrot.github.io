@@ -15,6 +15,10 @@ This is an HTML5 application, built with [Brunch](http://brunch.io).
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
     * [Brunch site](http://brunch.io)
+* Publish:
+    * `./publish.sh` — Cleans, builds for production, and copies files for publishing
+    * Verify that the changes are what you expected
+    * Then `git add`, `git commit`, and `git push` to commit and push changes to github for deployment to gh-pages
 
 ### License
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
