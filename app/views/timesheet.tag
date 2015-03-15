@@ -3,19 +3,13 @@
     <div id="{ timesheet_id }"></div>
   </div>
 
-  this.lpad = function lpad(str, pad) {
-    return (pad + str).slice(-pad.length);
-  };
+  var utils = require('scripts/utils');
 
-  this.get_random_id = function get_random_id() {
-    return this.lpad(Math.floor(Math.random() * 10000000000), '00000000000');
-  };
-
-  this.timesheet_id = 'timesheet' + this.get_random_id();
+  this.timesheet_id = 'timesheet' + utils.get_random_id();
 
   this.on('mount', function on_mount() {
     var now = new Date();
-    var current = this.lpad(now.getMonth() + 1, '00') + '/' + now.getFullYear();
+    var current = utils.lpad(now.getMonth() + 1, '00') + '/' + now.getFullYear();
 
     var container = this['{ timesheet_id }'];
 
