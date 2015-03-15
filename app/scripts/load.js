@@ -1,5 +1,6 @@
 /* Include required views */
 require('views/app');
+require('views/brand-icon');
 require('views/navbar');
 require('views/pages/home');
 require('views/timesheet');
