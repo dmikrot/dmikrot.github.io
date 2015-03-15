@@ -10,9 +10,22 @@
 <navbar-header>
   <div class="navbar-header">
     <navbar-toggle></navbar-toggle>
-    <a class="navbar-brand" href="#home">Donovan Mikrot</a>
+    <a class="navbar-brand" href="#home">
+      <brand-icon color="#fff" width="30" height="30"></brand-icon> Donovan Mikrot
+    </a>
   </div>
 </navbar-header>
+
+<brand-icon>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"
+      width="{ opts.width }" height="{ opts.height }">
+    <circle cx="3" cy="1" r="0.8" transform="matrix(20,0,0,20,10,10)" style="fill:{ opts.color }"/>
+    <circle cx="5" cy="3" r="0.8" transform="matrix(20,0,0,20,10,10)" style="fill:{ opts.color }"/>
+    <circle cx="1" cy="5" r="0.8" transform="matrix(20,0,0,20,10,10)" style="fill:{ opts.color }"/>
+    <circle cx="3" cy="5" r="0.8" transform="matrix(20,0,0,20,10,10)" style="fill:{ opts.color }"/>
+    <circle cx="5" cy="5" r="0.8" transform="matrix(20,0,0,20,10,10)" style="fill:{ opts.color }"/>
+  </svg>
+</brand-icon>
 
 <navbar-collapse>
   <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -89,8 +102,6 @@
       <iframe frameborder="0" scrolling="0" width="155px" height="20px"
           src="https://ghbtns.com/github-btn.html?user=dmikrot&type=follow&count=true">
       </iframe>
-    </p>
-    <p class="navbar-text github-btn-frame">
       <iframe frameborder="0" scrolling="0" width="100px" height="20px"
           src="https://ghbtns.com/github-btn.html?user=dmikrot&repo=dmikrot.github.io&type=watch&count=true&v=2">
       </iframe>
