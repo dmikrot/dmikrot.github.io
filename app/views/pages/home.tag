@@ -64,7 +64,7 @@
     <div class="panel-body">
       <p class="lead">How to get a response from me about a job:</p>
       <ul>
-        <li>I walk or bike to work, so please only send me info about jobs in or near <a href="http://www.downtownmpls.com/">Downtown Minneapolis</a>.</li>
+        <li>I walk or bike to work, so please only send me info about jobs that are remote or near <a href="http://www.downtownmpls.com/">Downtown Minneapolis</a>.</li>
         <li>I am not looking for temporary or contract work. I am not an independent consultant. Send me full-time employee positions only.</li>
         <li>Include the name and website of the company you are recruiting for.</li>
         <li>I list a lot of technologies on my résumé, so at least try to match my <a href="https://www.linkedin.com/in/donovanmn#background-skills">top skills on LinkedIn</a>. Hint: I built this site with technologies I'm interested in.</li>

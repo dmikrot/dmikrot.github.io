@@ -67,6 +67,7 @@
         <span class="caret"></span>
       </a>
       <ul class="dropdown-menu" role="menu">
+        <li><a href="https://github.com/dmikrot">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/donovanmn">LinkedIn</a></li>
         <li>
           <a href="https://plus.google.com/u/0/+DonovanMikrot42/posts">Google+</a>
