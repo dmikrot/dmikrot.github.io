@@ -19,14 +19,12 @@
 
   this.on('mount', function on_mount() {
     var container = this['{ brand_icon_id }'];
-    var vivus = new Vivus(container, {
-      type: 'oneByOne',
-      duration: 100,
-      start: 'manual'
-    });
     setTimeout(function () {
-      vivus.play();
-    }, 500);
+      var vivus = new Vivus(container, {
+        type: 'oneByOne',
+        duration: 100
+      });
+    }, 0);
   });
 
 </brand-icon>
