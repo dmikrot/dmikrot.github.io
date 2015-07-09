@@ -18,7 +18,7 @@
     "sass-brunch": "~1.8.8",
     "uglify-js-brunch": ">= 1.0 < 1.8",
     "clean-css-brunch": ">= 1.0 < 1.8",
-    "auto-reload-brunch": ">= 1.0 < 1.8",
-    "riot-brunch": "0.0.1"
+    "auto-reload-brunch": "~1.8.0",
+    "riot-brunch": "0.0.2"
   }
 }

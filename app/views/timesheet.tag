@@ -1,5 +1,5 @@
 <timesheet>
-  <div class="well visible-lg-block">
+  <div class="well visible-lg-block white">
     <div id="{ timesheet_id }"></div>
   </div>
 
