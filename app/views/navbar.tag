@@ -11,7 +11,8 @@
   <div class="navbar-header">
     <navbar-toggle></navbar-toggle>
     <a class="navbar-brand" href="#home">
-      <brand-icon color="#fff" width="30" height="30"></brand-icon> Donovan Mikrot
+      <brand-icon color="#fff" width="30" height="30"></brand-icon>
+      <span class="navbar-brand-title">Donovan Mikrot</span>
     </a>
   </div>
 </navbar-header>
