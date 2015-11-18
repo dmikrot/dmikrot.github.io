@@ -26,8 +26,9 @@
       ['05/2009', '04/2011', 'Medioh! Inc. | Software Developer', 'employee'],
       ['05/2011', current, 'Perficient Inc. | Sr. Technical Consultant', 'employee'],
       ['01/2014', '01/2015', 'Marbles.mx Co-founder', 'hobby'],
-      ['07/2014', '07/2014', 'RAGBRAI', 'hobby'],
-      ['11/2014', '12/2014', 'India', 'travel']
+      ['07/2014', '07/2014', 'RAGBRAI XLII', 'hobby'],
+      ['11/2014', '12/2014', 'India', 'travel'],
+      ['07/2015', '07/2015', 'RAGBRAI XLIII', 'hobby']
     ]);
   });
   
