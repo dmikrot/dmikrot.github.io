@@ -20,13 +20,13 @@
 <navbar-collapse>
   <div class="collapse navbar-collapse" id="navbar-collapse-1">
     <ul class="nav navbar-nav visible-xs-block">
-      <li each={ opts.pages } class={ active: parent.active(url) }
+      <li each={ opts.pages } class={ active: parent.isActive(url) }
           data-toggle="collapse" data-target="#navbar-collapse-1">
         <a href="#{url}">{name}</a>
       </li>
     </ul>
     <ul class="nav navbar-nav hidden-xs">
-      <li each={ opts.pages } class={ active: parent.active(url) }>
+      <li each={ opts.pages } class={ active: parent.isActive(url) }>
         <a href="#{url}">{name}</a>
       </li>
     </ul>
@@ -34,7 +34,7 @@
     <navbar-right></navbar-right>
   </div>
 
-  this.active = riot.route.isCurrent;
+  this.isActive = riot.route.isActive;
 </navbar-collapse>
 
 <navbar-toggle>

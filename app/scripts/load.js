@@ -12,8 +12,10 @@ for(var i = 0; i < pages.length; ++i) {
   require('views/pages/' + pages[i].url);
 };
 
-function setPage(page) {
-  if (!page) {
+var activePage;
+function setPage() {
+  activePage = Array.prototype.slice.call(arguments);
+  if (!activePage.length) {
     riot.route('home');
     return;
   }
@@ -21,28 +23,26 @@ function setPage(page) {
 }
 
 riot.route(setPage);
-riot.route.exec(setPage);
 
-function isCurrent() {
+function isActive() {
+  var page = Array.prototype.slice.call(arguments);
   var same = true;
-  var args = Array.prototype.slice.call(arguments);
-  riot.route.exec(function getPage() {
-    if (args.length !== arguments.length) {
-      same = false;
-    } else {
-      for (var i = 0; i < args.length; ++i) {
-        if (args[i] !== arguments[i]) {
-          same = false;
-          break;
-        }
+  if (page.length !== activePage.length) {
+    same = false;
+  } else {
+    for (var i = 0; i < page.length; ++i) {
+      if (page[i] !== activePage[i]) {
+        same = false;
+        break;
       }
     }
-  });
+  }
   return same;
 }
 
-riot.route.isCurrent = isCurrent;
+riot.route.isActive = isActive;
 
 /* Start the app */
+riot.route.start(true);
 riot.mount('app', {pages: pages});
 $.material.init();
