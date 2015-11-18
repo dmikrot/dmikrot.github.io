@@ -11,7 +11,7 @@
     var now = new Date();
     var current = utils.lpad(now.getMonth() + 1, '00') + '/' + now.getFullYear();
 
-    var container = this['{ timesheet_id }'];
+    var container = this['timesheet_id'];
     this.timesheet = new Timesheet(container, 2001, now.getFullYear(), [
       ['07/2001', '05/2005', 'Totino-Grace High School', 'student'],
       ['09/2002', '04/2008', 'Theatrical Electrician', 'hobby'],

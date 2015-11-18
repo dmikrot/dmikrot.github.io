@@ -18,7 +18,7 @@
   this.brand_icon_id = 'brand-icon' + utils.get_random_id();
 
   this.on('mount', function on_mount() {
-    var container = this['{ brand_icon_id }'];
+    var container = this['brand_icon_id'];
     setTimeout(function () {
       var vivus = new Vivus(container, {
         type: 'oneByOne',
