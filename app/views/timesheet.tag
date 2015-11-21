@@ -1,5 +1,5 @@
 <timesheet>
-  <div class="well visible-lg-block white">
+  <div class="card-panel hide-on-med-and-down white">
     <div id="{ timesheet_id }"></div>
   </div>
 
