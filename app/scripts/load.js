@@ -45,4 +45,3 @@ riot.route.isActive = isActive;
 /* Start the app */
 riot.route.start(true);
 riot.mount('app', {pages: pages});
-$.material.init();
