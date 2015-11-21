@@ -1,6 +1,6 @@
-<brand-icon>
+<dm-brand-icon>
   <svg id="{ brand_icon_id }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"
-      width="{ opts.width }" height="{ opts.height }">
+      width="35" height="35" style="vertical-align: sub;">
     <circle cx="3" cy="1" r="0.45" transform="matrix(20,0,0,20,10,10)"
       style="fill:none;stroke:{ opts.color }"/>
     <circle cx="5" cy="3" r="0.45" transform="matrix(20,0,0,20,10,10)"
@@ -27,4 +27,4 @@
     }, 0);
   });
 
-</brand-icon>
+</dm-brand-icon>

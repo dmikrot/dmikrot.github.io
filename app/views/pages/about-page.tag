@@ -1,4 +1,4 @@
-<about>
+<about-page>
   <div class="page-header">
     <h1><span class="glyphicon glyphicon-info-sign"></span>About Donovan</h1>
   </div>
@@ -6,7 +6,7 @@
   <timesheet></timesheet>
   <opinions></opinions>
   <contact></contact>
-</about>
+</about-page>
 
 <intro>
   <div class="well">

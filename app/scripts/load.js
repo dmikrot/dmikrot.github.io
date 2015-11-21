@@ -1,21 +1,22 @@
 /* Include required views */
-require('views/app');
-require('views/brand-icon');
-require('views/navbar');
-require('views/pages/home');
+require('views/dm-app');
+require('views/dm-brand-icon');
+require('views/dm-nav');
 require('views/timesheet');
 
 var pages = [
-  {name: 'About', url: 'about'}
+  {name: 'Home', url: 'home'},
+  {name: 'About', url: 'about'},
+  {name: 'Profiles', url: 'profiles'}
 ];
 for(var i = 0; i < pages.length; ++i) {
-  require('views/pages/' + pages[i].url);
+  require('views/pages/' + pages[i].url + '-page');
 };
 
 var activePage;
 function setPage() {
   activePage = Array.prototype.slice.call(arguments);
-  if (!activePage.length) {
+  if (!activePage.length || !activePage[0]) {
     riot.route('home');
     return;
   }
@@ -44,4 +45,8 @@ riot.route.isActive = isActive;
 
 /* Start the app */
 riot.route.start(true);
-riot.mount('app', {pages: pages});
+riot.mount('dm-app', {pages: pages});
+
+$(function () {
+  $('.button-collapse').sideNav();
+});

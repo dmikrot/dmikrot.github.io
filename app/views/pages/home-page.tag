@@ -1,4 +1,4 @@
-<home>
+<home-page>
   <div class="page-header">
     <h1>Donovan Mikrot <small>developer at large</small></h1>
   </div>
@@ -71,4 +71,4 @@
       </ul>
     </div>
   </div>
-</home>
+</home-page>
