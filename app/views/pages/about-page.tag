@@ -1,7 +1,7 @@
 <about-page>
   <h3><i class="material-icons small">info</i> About Donovan</h3>
   <dm-intro></dm-intro>
-  <!-- <timesheet></timesheet> -->
+  <!-- <dm-timesheet></dm-timesheet> -->
   <dm-opinions></dm-opinions>
   <dm-contact></dm-contact>
 </about-page>

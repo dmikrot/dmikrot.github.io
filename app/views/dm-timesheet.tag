@@ -1,17 +1,15 @@
-<timesheet>
+<dm-timesheet>
   <div class="card-panel hide-on-med-and-down white">
-    <div id="{ timesheet_id }"></div>
+    <div class="timesheet"></div>
   </div>
 
   var utils = require('scripts/utils');
-
-  this.timesheet_id = 'timesheet' + utils.get_random_id();
 
   this.on('mount', function on_mount() {
     var now = new Date();
     var current = utils.lpad(now.getMonth() + 1, '00') + '/' + now.getFullYear();
 
-    var container = this['timesheet_id'];
+    var container = this.root.firstElementChild.firstElementChild;
     this.timesheet = new Timesheet(container, 2001, now.getFullYear(), [
       ['07/2001', '05/2005', 'Totino-Grace High School', 'student'],
       ['09/2002', '04/2008', 'Theatrical Electrician', 'hobby'],
@@ -42,4 +40,4 @@
     }, 5);
   });
 
-</timesheet>
+</dm-timesheet>

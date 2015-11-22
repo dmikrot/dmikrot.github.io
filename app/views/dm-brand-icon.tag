@@ -1,5 +1,5 @@
 <dm-brand-icon>
-  <svg id="{ brand_icon_id }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"
       width="35" height="35" style="vertical-align: sub;">
     <circle cx="3" cy="1" r="0.45" transform="matrix(20,0,0,20,10,10)"
       style="fill:none;stroke:{ opts.color }"/>
@@ -13,14 +13,10 @@
       style="fill:none;stroke:{ opts.color }"/>
   </svg>
 
-  var utils = require('scripts/utils');
-
-  this.brand_icon_id = 'brand-icon' + utils.get_random_id();
-
   this.on('mount', function on_mount() {
-    var container = this['brand_icon_id'];
+    var svg = this.root.firstElementChild;
     setTimeout(function () {
-      var vivus = new Vivus(container, {
+      var vivus = new Vivus(svg, {
         type: 'oneByOne',
         duration: 100
       });
