@@ -47,6 +47,6 @@
 </dm-popouts>
 
 <dm-popout>
-    <div class={ collapsible-header: true, active: opts.active }><i class="material-icons">{ opts.icon }</i>{ opts.title }</div>
-    <div class="collapsible-body"><p class="flow-text"><yield/></p></div>
+  <div class={ collapsible-header: true, active: opts.active }><i class="material-icons">{ opts.icon }</i>{ opts.title }</div>
+  <div class="collapsible-body"><p class="flow-text"><yield/></p></div>
 </dm-popout>

@@ -2,6 +2,7 @@
 require('views/dm-app');
 require('views/dm-brand-icon');
 require('views/dm-nav');
+require('views/dm-life');
 require('views/dm-timesheet');
 
 var pages = [

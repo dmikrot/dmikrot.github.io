@@ -11,14 +11,15 @@
     "start": "brunch watch --server",
     "test": "brunch test"
   },
-  "dependencies": {
-    "traceur-brunch": "^1.7.5",
+  "devDependencies": {
     "javascript-brunch": "^1.8.0",
     "css-brunch": "^1.7.0",
     "sass-brunch": "^1.8.11",
     "uglify-js-brunch": "^1.7.8",
     "clean-css-brunch": "^1.7.2",
     "auto-reload-brunch": "^1.8.1",
-    "riot-brunch": "^0.0.2"
+    "riot-brunch": "^0.0.2",
+    "babel": "^5.8.23",
+    "riot": "^2.3.11"
   }
 }

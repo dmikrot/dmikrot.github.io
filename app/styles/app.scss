@@ -3,7 +3,8 @@
 // 01.Bower Components
 @import 'materialize';
 
-// 02.Common Styles
-@import 'timesheet_custom';
+// 02.Custom Styles
+@import 'popout';
 
-// 03.Page Specific Styles
+// 03.Component Styles
+@import 'timesheet_custom';

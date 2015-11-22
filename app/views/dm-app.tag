@@ -1,5 +1,6 @@
 <dm-app>
   <dm-nav pages={ opts.pages }></dm-nav>
+  <dm-life></dm-life>
   <div id="content" class="container">
     <div show={ isActive('home') }>
       <home-page></home-page>
