@@ -98,15 +98,21 @@
       draw (width, height, size, generation, alpha) {
         var halfWidth = width / 2;
         var spacing = Math.ceil(width / size);
-        
+
         this.c2d.save();
         this.c2d.translate(halfWidth, halfWidth);
         this.drawGrid(spacing, halfWidth, height);
-        
+
         this.c2d.translate(-size * spacing / 2, -size * spacing / 2);
         this.c2d.translate(spacing / 2, spacing / 2);
         this.drawGeneration(spacing, generation, alpha);
         
+        var multiple = Math.ceil(height / width);
+        for (var i = 1; i < multiple; ++i) {
+          this.c2d.translate(0, size * spacing);
+          this.drawGeneration(spacing, generation, alpha);
+        }
+
         this.c2d.restore();
       }
 
