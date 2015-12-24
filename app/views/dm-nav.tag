@@ -44,8 +44,8 @@
 
 <dm-nav-dropdowns>
   <ul id="{ opts.mobile ? 'resumes-mobile' : 'resumes'}" class="dropdown-content">
-    <li><a href="/static/Donovan_Mikrot_Resume.pdf">Résumé</a></li>
-    <li><a href="/static/Donovan_Mikrot_Transcript.pdf">Transcript</a></li>
+    <li><a href="/static/Donovan_Mikrot_Resume.pdf" target="_top">Résumé</a></li>
+    <li><a href="/static/Donovan_Mikrot_Transcript.pdf" target="_top">Transcript</a></li>
     <li><a href="https://hipcv.com/donovanmikrot/r/20150315">HipCV</a></li>
   </ul>
 </dm-nav-dropdowns>
