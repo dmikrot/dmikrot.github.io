@@ -1,5 +1,10 @@
 <home-page>
-  <h3><i class="material-icons small">home</i> Donovan Mikrot <small>developer at large</small></h3>
+  <h3>
+    <i class="material-icons small">home</i>
+    Donovan Mikrot
+    <br class="hide-on-med-and-up"/>
+    <small><a class="unstyled" href="http://manifesto.softwarecraftsmanship.org/">Software Craftsman</a></small>
+  </h3>
   <dm-welcome></dm-welcome>
   <dm-popouts></dm-popouts>
 </home-page>
