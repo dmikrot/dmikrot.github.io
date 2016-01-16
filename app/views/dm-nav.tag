@@ -27,11 +27,16 @@
 </dm-nav-brand>
 
 <dm-nav-pages>
-  <li each={ opts.pages } class={active: isActive(url) }>
-    <a href="#{url}" class="waves-effect waves-light">{name}</a>
+  <li each={ opts.pages } class={ active: isActive(url) }>
+    <a href="#{url}" class="waves-effect waves-light" onclick={ hideSideNav }>{name}</a>
   </li>
 
   this.isActive = riot.route.isActive;
+
+  this.hideSideNav = function (e) {
+    $('button-collapse').sideNav('hide');
+    return true;
+  };
 </dm-nav-pages>
 
 <dm-nav-links>
