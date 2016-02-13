@@ -96,13 +96,13 @@
       <strong>Donovan Mikrot</strong>
       <div class="row">
         <div class="col l4 m6 s12">
-          <i class="material-icons tiny">person_pin_circle</i> 1367 Willow St Apt #306<br/>
-          Minneapolis, MN 55403
+          <i class="material-icons tiny">contact_mail</i> 700 N Valley St Suite B PMB 12118<br/>
+          Anaheim, CA 92801
         </div>
         <div class="col l8 m6 s12">
           <div class="row">
             <div class="col l6 s12">
-              <abbr title="Email"><i class="material-icons tiny">contact_mail</i></abbr> <a href="mailto:donovan@donovan.mn">donovan@donovan.mn</a>
+              <abbr title="Email"><i class="material-icons tiny">email</i></abbr> <a href="mailto:donovan@donovan.mn">donovan@donovan.mn</a>
             </div>
             <div class="col l6 s12">
               <abbr title="Cell"><i class="material-icons tiny">contact_phone</i></abbr> (651) 300-4287
