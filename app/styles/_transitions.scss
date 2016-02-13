@@ -1,0 +1,26 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.page-container {
+  position: relative;
+
+  & > .page {
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity .5s ease-in-out, max-height .1s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out, max-height .1s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out, max-height .1s ease-in-out;
+
+    &.active {
+      opacity: 1;
+      max-height: 4000px;
+    }
+  }
+}

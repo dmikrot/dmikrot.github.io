@@ -1,16 +1,10 @@
 <dm-app>
   <dm-nav pages={ opts.pages }></dm-nav>
   <dm-life></dm-life>
-  <div id="content" class="container">
-    <div show={ isActive('home') }>
-      <home-page></home-page>
-    </div>
-    <div show={ isActive('about') }>
-      <about-page></about-page>
-    </div>
-    <div show={ isActive('profiles') }>
-      <profiles-page></profiles-page>
-    </div>
+  <div class="container page-container">
+    <home-page class={ page: true, active: isActive('home') }></home-page>
+    <about-page class={ page: true, active: isActive('about') }></about-page>
+    <profiles-page class={ page: true, active: isActive('profiles') }></profiles-page>
   </div>
 
   this.isActive = riot.route.isActive;
