@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Clean slate
 git clean -df
 git checkout source
