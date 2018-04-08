@@ -3,6 +3,7 @@
 set -e
 
 # Clean slate
+git checkout -- .
 git clean -df
 git checkout source
 rm -rf public
@@ -14,7 +15,7 @@ brunch build --production
 git checkout master
 
 # Clean slate
-rm -rf fonts
+rm -rf img
 rm -rf javascripts
 rm -rf static
 rm -rf stylesheets
