@@ -1,5 +1,5 @@
 <dm-life>
-  <canvas id="life"></canvas>
+  <canvas id="life" ref="canvas"></canvas>
 
   <script type="es6">
     class Life {
@@ -106,7 +106,7 @@
         this.c2d.translate(-size * spacing / 2, -size * spacing / 2);
         this.c2d.translate(spacing / 2, spacing / 2);
         this.drawGeneration(spacing, generation, alpha);
-        
+
         var multiple = Math.ceil(height / width);
         for (var i = 1; i < multiple; ++i) {
           this.c2d.translate(0, size * spacing);
@@ -268,17 +268,12 @@
       }
     }
 
-    var tag = this;
-    function startLife() {
-      var canvas = tag.root.firstElementChild;
+    this.on('mount', () => {
+      const canvas = this.refs.canvas;
       if (canvas) {
-        var life = new Life(canvas, 20);
-      } else {
-        setTimeout(startLife, 10);
+        const life = new Life(canvas, 20);
       }
-    }
-
-    startLife();
+    });
   </script>
 
   <style scoped>
@@ -291,7 +286,7 @@
       z-index: -100;
     }
 
-    :scope > canvas {
+    canvas {
       display: block;
     }
   </style>

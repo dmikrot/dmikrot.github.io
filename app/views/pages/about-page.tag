@@ -1,7 +1,6 @@
 <about-page>
   <h3><i class="material-icons small">info</i> About Donovan</h3>
   <dm-intro></dm-intro>
-  <!-- <dm-timesheet></dm-timesheet> -->
   <dm-opinions></dm-opinions>
   <dm-contact></dm-contact>
 </about-page>
@@ -12,6 +11,12 @@
       I am a software developer and self-proclaimed nerd. I will never stop learning new things. I want to travel and see the world. I am politically liberal and open-minded. I am very enthusiastic about technology and how it can change the world.
     </p>
   </div>
+
+  <style scoped>
+    .card-panel > .flow-text {
+      margin: 0;
+    }
+  </style>
 </dm-intro>
 
 <dm-opinions>
@@ -87,27 +92,24 @@
       </tbody>
     </table>
   </div>
+
+  <style scoped>
+    .highlight > tbody > tr:hover {
+      background-color: #c8e6c9;
+    }
+  </style>
 </dm-opinions>
 
 <dm-contact>
   <div class="card-panel">
     <h5><i class="material-icons">perm_contact_calendar</i> Contact Info</h5>
     <address>
-      <strong>Donovan Mikrot</strong>
       <div class="row">
-        <div class="col l4 m6 s12">
-          <i class="material-icons tiny">contact_mail</i> 700 N Valley St Suite B PMB 12118<br/>
-          Anaheim, CA 92801
+        <div class="col l6 s12">
+          <abbr title="Email"><i class="material-icons tiny">email</i></abbr> <a href="mailto:donovan@donovan.mn">donovan@donovan.mn</a>
         </div>
-        <div class="col l8 m6 s12">
-          <div class="row">
-            <div class="col l6 s12">
-              <abbr title="Email"><i class="material-icons tiny">email</i></abbr> <a href="mailto:donovan@donovan.mn">donovan@donovan.mn</a>
-            </div>
-            <div class="col l6 s12">
-              <abbr title="Cell"><i class="material-icons tiny">contact_phone</i></abbr> (651) 300-4287
-            </div>
-          </div>
+        <div class="col l6 s12">
+          <abbr title="Cell"><i class="material-icons tiny">contact_phone</i></abbr> <a href="tel:1-651-300-4287">(651) 300-4287</a>
         </div>
       </div>
     </address>

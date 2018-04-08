@@ -1,12 +1,4 @@
 @charset "UTF-8";
 
-// 01.Bower Components
-@import 'materialize';
-
-// 02.Custom Styles
-@import 'popout';
-@import 'theme';
-@import 'transitions';
-
-// 03.Component Styles
-@import 'timesheet_custom';
+// 01.Libraries
+@import "../../node_modules/materialize-css/sass/materialize";

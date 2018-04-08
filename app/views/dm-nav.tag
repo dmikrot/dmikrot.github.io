@@ -3,48 +3,89 @@
   <dm-nav-dropdowns mobile={ true }></dm-nav-dropdowns>
   <div class="navbar-fixed">
     <nav class="green lighten-1" role="navigation">
-      <div class="nav-wrapper container">
-        <dm-nav-brand></dm-nav-brand>
-        <ul class="right hide-on-med-and-down">
-          <dm-nav-pages pages={ opts.pages }></dm-nav-pages>
-          <dm-nav-links></dm-nav-links>
-        </ul>
-        <ul id="nav-mobile" class="side-nav">
-          <dm-nav-pages pages={ opts.pages }></dm-nav-pages>
-          <dm-nav-links mobile={ true }></dm-nav-links>
-        </ul>
-        <dm-nav-toggle></dm-nav-toggle>
+      <div class="nav-wrapper row">
+        <div class="col s12">
+          <a href="#" class="brand-logo">
+            <dm-brand-icon color="#fff"></dm-brand-icon>
+            <span class="hide-on-small-only">Donovan Mikrot</span>
+          </a>
+          <ul class="right hide-on-med-and-down" data-is="dm-nav-links"
+               pages={ opts.pages } page={ opts.page }>
+          </ul>
+          <dm-nav-toggle></dm-nav-toggle>
+        </div>
       </div>
     </nav>
   </div>
+  <dm-sidenav pages={ opts.pages } page={ opts.page }></dm-sidenav>
 </dm-nav>
 
-<dm-nav-brand>
-  <a href="#" class="brand-logo">
-    <dm-brand-icon color="#fff"></dm-brand-icon>
-    <span class="hide-on-small-only">Donovan Mikrot</span>
-  </a>
-</dm-nav-brand>
+<dm-sidenav>
+  <ul id="nav-mobile" ref="sidenav" class="sidenav" data-is="dm-nav-links"
+      pages={ opts.pages } page={ opts.page } mobile={ true }>
+  </ul>
 
-<dm-nav-pages>
-  <li each={ opts.pages } class={ active: isActive(url) }>
-    <a href="#{url}" class="waves-effect waves-light" onclick={ hideSideNav }>{name}</a>
-  </li>
+  <script type="es6">
+    const M = require('materialize-css');
 
-  this.isActive = riot.route.isActive;
+    let sidenav;
 
-  this.hideSideNav = function (e) {
-    $('button-collapse').sideNav('hide');
-    return true;
-  };
-</dm-nav-pages>
+    this.on('mount', () => {
+      sidenav = M.Sidenav.init(this.refs.sidenav.root);
+    });
+
+    this.on('unmount', () => {
+      sidenav.destroy();
+    });
+  </script>
+</dm-sidenav>
 
 <dm-nav-links>
-  <li><a class="dropdown-button waves-effect waves-light" href="#" data-activates={ opts.mobile ? 'resumes-mobile' : 'resumes'}>Résumés<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li each={ opts.pages } class={ active: url === opts.page }>
+    <a href="#{url}" onclick={ hideSideNav }>{name}</a>
+  </li>
+  <li>
+    <a ref="dropdownTrigger" class="dropdown-trigger"
+        href="#" data-target={ opts.mobile ? 'resumes-mobile' : 'resumes'}>
+      Résumés
+      <i class="material-icons right">arrow_drop_down</i>
+    </a>
+  </li>
+
+  <script type="es6">
+    const M = require('materialize-css');
+    let dropdown;
+
+    this.on('mount', () => {
+      dropdown = M.Dropdown.init(this.refs.dropdownTrigger);
+    });
+
+    this.on('unmount', () => {
+      dropdown.destroy();
+    });
+
+    //class={ active: isActive(url) }
+
+    this.hideSideNav = () => {
+      M.Sidenav.getInstance(document.querySelector('.sidenav')).close();
+    };
+  </script>
+
+  <style>
+    .sidenav > li.active {
+      background-color: #c8e6c9;
+    }
+
+    .sidenav > li:hover {
+      background-color: #a5d6a7;
+    }
+  </style>
 </dm-nav-links>
 
 <dm-nav-toggle>
-  <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="material-icons">menu</i></a>
+  <a class="sidenav-trigger" href="#" data-target="nav-mobile">
+    <i class="material-icons">menu</i>
+  </a>
 </dm-nav-toggle>
 
 <dm-nav-dropdowns>
@@ -53,4 +94,10 @@
     <li><a href="/static/Donovan_Mikrot_Transcript.pdf" target="_top">Transcript</a></li>
     <li><a href="https://hipcv.com/donovanmikrot/r/20150315">HipCV</a></li>
   </ul>
+
+  <style scoped>
+    .dropdown-content li > a {
+      color: #039be5;
+    }
+  </style>
 </dm-nav-dropdowns>
