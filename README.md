@@ -1,3 +1,7 @@
+# Deprecation Notice
+
+This repository has been migrated to GitLab and this GitHub version is no longer active. [View it on GitLab](https://gitlab.com/DonovanMN/personal-site)
+
 # Personal site for Donovan Mikrot
 
 This is an HTML5 application, built with [Brunch](http://brunch.io).
